@@ -1,0 +1,27 @@
+datetime
+datetime.datetime.now() gives 2026-07-02 18:58:44.650295
+this common output of YYYY-MM-DD HH:MM:SS. can be parsed or split using
+strftime("%d/%M/%Y") to get day/month/year
+can pass in datetime.datetime(2020, 5, 6) for example
+
+pros/uses
+works with calendar well, can store date as string
+
+use time only for comparisons :)
+
+
+use time.mktime for converting to seconds from epoch
+takes input of 9 long tuple
+(year, month, day, hour, minute, seconds,-1,-1,-1)
+
+
+
+format is datetime in db, time for comparisons
+
+OR 
+convert all outputs from calendar into time
+makes for easy comparisons
+
+so that would be
+time.mktime((.....)) for absolute
+time.local_time(123454.....) for date to display

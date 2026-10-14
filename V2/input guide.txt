@@ -1,0 +1,19 @@
+--------------------------------DB-----------------------
+List(ListID, Description, IsDone)
+ListItem(ItemID, ListID, Description, IsDone, DueDate, TimeCreasted, IsPriority, Note)
+SubItem(SubItemID, ItemID, Description, IsDone)
+
+
+------------------INPUTS---------------
+addItem (main) = [Description, DueDate, IsPriority]
+addItem (DB) = [ListID, Description, IsDone, DueDate, TimeCreated, IsPriority]
+
+
+
+----classses----------
+GetDetails List = [ self._description, self._isDone]
+GetDetails Item = [self._description, self._isDone,  self._dueDate,self._timeCreated, self._isPrioirity, self._note]
+0,1,2
+
+updateList [Description, isdone]
+updateItem  [Description, IsDone, DueDate, TimeCreasted, IsPriority, Note]
